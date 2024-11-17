@@ -1,0 +1,40 @@
+/* contact */
+.contact-box {
+    width: 650px;
+    margin: 20px auto;
+  }
+  
+  .input-row {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+  }
+  
+  .input-row .input-group {
+    flex-basis: 45px;
+  }
+  
+  .input-row .input-group input {
+    width: 300px;
+    border-style: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding-bottom: 5px;
+    background-color: #fbfbfb;
+  }
+  
+  form label {
+    margin-bottom: 6px;
+    display: block;
+  }
+  
+  form textarea {
+    margin: 0 auto;
+    width: 650px;
+    border: 1px solid black;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fbfbfb;
+  }
