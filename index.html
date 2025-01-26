@@ -1,352 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/1_navbar.css">
-  <link rel="stylesheet" href="css/2_home.css">
-  <link rel="stylesheet" href="css/3_about.css">
-  <link rel="stylesheet" href="css/4_contact.css">
-  <link rel="stylesheet" href="css/5_footer.css">
-  <link rel="stylesheet" href="css/-item.css">
-  <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
-  <title>Landing page </title>
-</head>
-<body>
-	<!-- loading screen -->
-	<div class="center-body">
-		<div class="loader-triangle-3">
-		  <svg id="triangle" width="50px" height="50px" viewbox="-3 -4 39 39">
-			<polygon fill="transparent" stroke="#ffeb3b" stroke-width="2" points="16,0 32,32 0,32"></polygon>
-		  </svg>
-		</div>
-	</div>
-  
-	<!-- navbar -->
-	<nav>
-	  <div class="nav-item">
-  	  <div class="brand">
-  	    <img class="logo" src="assets/main-logo.jpg" alt="leftside logo" />
-  	    <h1>Left<span>side</span></h1>
-  	  </div>
-  	  <div class="nav-menu">
-  	    <ul class="menu">
-    	    <li><a href="#Home" selected>Home</a></li>
-    	    <li><a href="#About">About</a></li>
-    	    <li><a href="#Portofolio">Portofolio</a></li>
-    	    <li><a href="#Certificate">Certificate</a></li>
-    	    <li><a href="#Testimonial">Testimonial</a></li>
-    	    <li><a href="#Contactus">Contact us</a></li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+    <title>Landing page</title>
+  </head>
+  <body>
+    <!-- loading screen -->
+    <div class="center-body">
+      <div class="loader-triangle-3">
+        <svg id="triangle" width="50px" height="50px" viewbox="-3 -4 39 39">
+          <!-- gradient definition -->
+          <defs>
+            <linearGradient
+              id="gradient-stroke"
+              gradientUnits="userSpaceOnUse"
+              x1="0"
+              y1="2"
+              x2="6"
+              y2="0"
+            >
+              <stop offset="0%" stop-color="red" />
+              <stop offset="50%" stop-color="red" />
+              <stop offset="50%" stop-color="white" />
+              <stop offset="100%" stop-color="white" />
+            </linearGradient>
+          </defs>
+          <!-- triangle -->
+          <polygon
+            fill="transparent"
+            stroke="url(#gradient-stroke)"
+            stroke-width="2"
+            points="16,0 32,32 0,32"
+          ></polygon>
+        </svg>
       </div>
     </div>
-	</nav>
-	
-	<!-- content -->
-	<section class="main-content">
-  	<!-- home -->
-  	<section id="Home">
-  	  <div class="content">
-  	    <div class="text-content">
-  	      <h1>What is Left<span>side</span>?</h1>
-  	      <p>Leftside is Lorem ipsum dolor sit amet, consectetur adipisicing elit Mollitia, aliquid!</p>
-  	      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis fuga corrupti vero repudiandae doloremque repellat eveniet aspernatur pariatur eaque placeat perspiciatis similique maiores debitis, vitae, commodi rerum consequatur molestiae vel esse, quasi sint nostrum in velit dolorem omnis. Quis ad, numquam deleniti aliquamdeleni  consequatur dolores cum consectetur voluptate quos animi aliquid. Nam, voluptatem.</p>
-  	      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quidem delectus officia recusandae ipsam nobis doloremque exercitationem cumque eius aliquid sed, nisi nulla nihil laudantium quia totam earum ratione eaque explicabo in consequuntur, temporibus itaque!</p>
-  	      <button class="l-more" href="#About">Learn more...</button>
-  	    </div>
-  	    <img class="property1" src="assets/properties/property.jpg" alt="gambar komputer" />
-  	  </div>
-  	</section>
-  	
-  	<!-- about -->
-  	<section id="About">
-  	  <h1 class="aboutme">About Left<span>side</span></h1>
-  	  <div class="content1">
-  	    <div class="property">
-  	      <div class="about-img">
-  	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic labore officiis similique et incidunt perspiciatis eos. Minus libero, ab suscipit.</p>
-  	        <img class="asspro1" src="assets/properties/property(1).jpeg" alt="programmer work">
-  	      </div>
-  	    </div>
-  	    <div class="property">
-  	      <div class="about-img">
-  	        <img class="asspro2" src="assets/properties/property(2).jpeg" alt="">
-  	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic labore officiis similique et incidunt perspiciatis eos. Minus libero, ab suscipit.</p>
-  	      </div>
-  	    </div>
-  	    <div class="property">
-  	      <div class="about-img">
-  	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic labore officiis similique et incidunt perspiciatis eos. Minus libero, absuscipit.</p>
-  	        <img class="asspro3" src="assets/properties/property(3).jpeg" alt="">
-  	      </div>
-  	    </div>
-  	  </div>
-  	</section>
-  	
-  	<!-- portofolio -->
-  	<section id="Portofolio">
-  	  <h1 class="aboutme">Porto<span>folio</span></h1>
-  	  <div class="container">
-  	    <div class="slider">
-  	      <div class="items">
-  	        <div class="img-content"></div>
-  	        <div class="caption">
-  	          <h2>damn 1</h2>
-  	          <p>Lorem ipsum dolor sit amet.</p>
-  	        </div>
-  	      </div>
-  	      <div class="items">
-  	        <div class="img-content"></div>
-  	        <div class="caption">
-  	          <h2>damn 2</h2>
-  	          <p>Lorem ipsum dolor sit amet.</p>
-  	        </div>
-  	      </div>
-  	      <div class="items">
-  	        <div class="img-content"></div>
-  	        <div class="caption">
-  	          <h2>damn 3</h2>
-  	          <p>Lorem ipsum dolor sit amet.</p>
-  	        </div>
-  	      </div>
-  	      <div class="items">
-  	        <div class="img-content"></div>
-  	        <div class="caption">
-  	          <h2>damn 4</h2>
-  	          <p>Lorem ipsum dolor sit amet.</p>
-  	        </div>
-  	      </div>
-  	      <div class="items">
-  	        <div class="img-content"></div>
-  	        <div class="caption">
-  	          <h2>damn 5</h2>
-  	          <p>Lorem ipsum dolor sit amet.</p>
-  	        </div>
-  	      </div>
-  	      <!-- <div class="items">
-  	        <div class="img-content"></div>
-  	        <div class="caption">
-  	          <h2>damn 6</h2>
-  	          <p>Lorem ipsum dolor sit amet.</p>
-  	        </div>
-  	      </div>
-  	      <div class="items">
-  	        <div class="img-content"></div>
-  	        <div class="caption">
-  	          <h2>damn 7</h2>
-  	          <p>Lorem ipsum dolor sit amet.</p>
-  	        </div>
-  	      </div>
-  	      <div class="items">
-  	        <div class="img-content"></div>
-  	        <div class="caption">
-  	          <h2>damn 8</h2>
-  	          <p>Lorem ipsum dolor sit amet.</p>
-  	        </div>
-  	      </div>
-  	      <div class="items">
-  	        <div class="img-content"></div>
-  	        <div class="caption">
-  	          <h2>damn 9</h2>
-  	          <p>Lorem ipsum dolor sit amet.</p>
-  	        </div>
-  	      </div>
-  	      <div class="items">
-  	        <div class="img-content"></div>
-  	        <div class="caption">
-  	          <h2>damn 10</h2>
-  	          <p>Lorem ipsum dolor sit amet.</p>
-  	        </div>
-  	      </div> -->
-  	    </div>
-  	  </div>
-  	</section>
-  	
-  	<!-- certificate -->
-  	<section id="Certificate">
-  	  <h1 class="aboutme">Certifi<span>cate</span></h1>
-  	  <div class="container" style="background-color:#fff;">
-  	    <div class="slider">
-  	      <div class="items">
-  	        <div class="img-content"></div>
-  	        <div class="caption">
-  	          <h2>damn 1</h2>
-  	          <p>Lorem ipsum dolor sit amet.</p>
-  	        </div>
-  	      </div>
-  	      <div class="items">
-  	        <div class="img-content"></div>
-  	        <div class="caption">
-  	          <h2>damn 2</h2>
-  	          <p>Lorem ipsum dolor sit amet.</p>
-  	        </div>
-  	      </div>
-  	      <div class="items">
-  	        <div class="img-content"></div>
-  	        <div class="caption">
-  	          <h2>damn 3</h2>
-  	          <p>Lorem ipsum dolor sit amet.</p>
-  	        </div>
-  	      </div>
-  	      <div class="items">
-  	        <div class="img-content"></div>
-  	        <div class="caption">
-  	          <h2>damn 4</h2>
-  	          <p>Lorem ipsum dolor sit amet.</p>
-  	        </div>
-  	      </div>
-  	      <div class="items">
-  	        <div class="img-content"></div>
-  	        <div class="caption">
-  	          <h2>damn 5</h2>
-  	          <p>Lorem ipsum dolor sit amet.</p>
-  	        </div>
-  	      </div>
-  	      <!-- <div class="items">
-  	        <div class="img-content"></div>
-  	        <div class="caption">
-  	          <h2>damn 6</h2>
-  	          <p>Lorem ipsum dolor sit amet.</p>
-  	        </div>
-  	      </div>
-  	      <div class="items">
-  	        <div class="img-content"></div>
-  	        <div class="caption">
-  	          <h2>damn 7</h2>
-  	          <p>Lorem ipsum dolor sit amet.</p>
-  	        </div>
-  	      </div>
-  	      <div class="items">
-  	        <div class="img-content"></div>
-  	        <div class="caption">
-  	          <h2>damn 8</h2>
-  	          <p>Lorem ipsum dolor sit amet.</p>
-  	        </div>
-  	      </div>
-  	      <div class="items">
-  	        <div class="img-content"></div>
-  	        <div class="caption">
-  	          <h2>damn 9</h2>
-  	          <p>Lorem ipsum dolor sit amet.</p>
-  	        </div>
-  	      </div>
-  	      <div class="items">
-  	        <div class="img-content"></div>
-  	        <div class="caption">
-  	          <h2>damn 10</h2>
-  	          <p>Lorem ipsum dolor sit amet.</p>
-  	        </div>
-  	      </div> -->
-  	    </div>
-  	  </div>
-  	</section>
-  	
-  	<!-- testimonial -->
-  	<section id="Testimonial">
-  	  <h1 class="aboutme">Testimo<span>nial</span></h1>
-  	  <div class="container">
-  	    <div class="slider" style="width:960px;">
-  	      <div class="items">
-  	        <div class="img-content"></div>
-  	        <div class="caption">
-  	          <h2>damn 1</h2>
-  	          <p>Lorem ipsum dolor sit amet.</p>
-  	        </div>
-  	      </div>
-  	      <div class="items">
-  	        <div class="img-content"></div>
-  	        <div class="caption">
-  	          <h2>damn 2</h2>
-  	          <p>Lorem ipsum dolor sit amet.</p>
-  	        </div>
-  	      </div>
-  	      <div class="items">
-  	        <div class="img-content"></div>
-  	        <div class="caption">
-  	          <h2>damn 3</h2>
-  	          <p>Lorem ipsum dolor sit amet.</p>
-  	        </div>
-  	      </div>
-  	    </div>
-  	  </div>
-  	</section>
-  	
-  	<!-- contact us -->
-  	<section id="Contactus">
-  	  <h1 class="aboutme">Contact <span>us</span></h1>
-  	  <div class="contact-box">
-  	    <form >
-  	      <div class="input-row">
-  	        <div class="input-group">
-  	          <label for="name">Name</label>
-  	          <input type="text" name="name" id="name" placeholder="Lorem ipsum dolor" />
-  	        </div>
-  	        <div class="input-group">
-  	          <label for="phone">Phone</label>
-  	          <input type="tel" name="phone" id="phone" placeholder="+62 89363617363" />
-  	        </div>
-  	      </div>
-  	      <div class="input-row">
-  	        <div class="input-group">
-  	          <label for="email">Email</label>
-  	          <input type="email" name="email" id="email"
-  	          placeholder="example@gmail.com" />
-  	        </div>
-  	        <div class="input-group">
-  	          <label for="subject">Subject</label>
-  	          <input type="text" name="subject" id="subject" placeholder="Product demo" />
-  	        </div>
-  	      </div>
-  	      <label for="message">Message</label>
-  	      <textarea name="message" id="message" rows="8" cols="40"
-  	      placeholder="Your message"></textarea>
-  	      <button class="l-more" style="margin-top:5px;" type="submit">Submit</button>
-  	    </form>
-  	  </div>
-  	</section>
-  	
-  	<!-- footer -->
-  	<footer>
-  	  <div class="main-footer">
-    	  <div class="note">
-    	    <h1>Left<span>side</span></h1>
-    	    <p style="width:180px; margin-top:-2px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit esse non quo accusamus beatae sapiente nemo amet cumque animi, optio?</p>
-    	  </div>
-    	  <div class="office">
-    	    <h2 style="width:50px;">Office</h2>
-    	    <p style="margin-top:25px;">Lorem ipsum dolor sit amet consectetur adipisicing, animi.</p>
-    	    <a href="#">leftside212@gmail.com</a><br/><br>
-    	    <a href="#">+62 85836284658</a>
-    	  </div>
-    	  <div class="link" style="margin-left:15px;">
-    	    <h2 style="width:40px;">Link</h2>
-    	    <ul>
-    	      <li><a href="#">Instagram</a></li>
-    	      <li><a href="#">LinkedIn</a></li>
-    	      <li><a href="#">GitHub</a></li>
-    	      <li><a href="#">Stack Overflow</a></li>
-    	    </ul>
-    	  </div>
-    	  <div class="short-message">
-    	    <h2 style="width:95px;">To Authors</h2>
-    	    <form>
-    	      <i class="far fa-envelope"></i>
-      	    <input type="text" placeholder="say hi!" />
-      	    <button type="submit"><i class="fas fa-arrow-right"></i></button>
-    	    </form>
-    	    <div class="social-icons">
-    	      <i class="fa-brands fa-square-instagram"></i>
-    	      <i class="fa-brands fa-linkedin"></i>
-    	      <i class="fa-brands fa-square-github"></i>
-    	      <i class="fa-brands fa-stack-overflow"></i>
-    	    </div>
-    	  </div>
-  	  </div> 
-	</footer>
 
-	<!-- copyright -->
-  <p style="color:white; text-align:center; margin-top: -35px">&copy;copyright | by leftside</p>
-	</section>
-</body>
+    <section class="main-section">
+      <!-- navbar -->
+      <nav>
+        <div class="nav-item">
+          <div class="brand">
+            <img class="logo" src="assets/main-logo.jpg" alt="leftside logo" />
+            <h1>Left<span>side</span></h1>
+          </div>
+          <div class="nav-menu">
+            <ul class="menu">
+              <li><a href="#Home" selected>Home</a></li>
+              <li><a href="#About">About</a></li>
+              <li><a href="#Portofolio">Portofolio</a></li>
+              <li><a href="#Certificate">Certificate</a></li>
+              <li><a href="#Testimonial">Testimonial</a></li>
+              <li><a href="#Contactus">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- content -->
+      <section class="main-content">
+        <!-- home -->
+        <section id="Home">
+          <div class="content">
+            <div class="text-content">
+              <h1>What is Left<span>side</span>?</h1>
+              <p>
+                Leftside is Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit Mollitia, aliquid!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Perferendis fuga corrupti vero repudiandae doloremque repellat
+                eveniet aspernatur pariatur eaque placeat perspiciatis similique
+                maiores debitis, vitae, commodi rerum consequatur molestiae vel
+                esse, quasi sint nostrum in velit dolorem omnis. Quis ad,
+                numquam deleniti aliquamdeleni consequatur dolores cum
+                consectetur voluptate quos animi aliquid. Nam, voluptatem.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nesciunt quidem delectus officia recusandae ipsam nobis
+                doloremque exercitationem cumque eius aliquid sed, nisi nulla
+                nihil laudantium quia totam earum ratione eaque explicabo in
+                consequuntur, temporibus itaque!
+              </p>
+              <button class="l-more" href="#About">Learn more...</button>
+            </div>
+            <img
+              class="property1"
+              src="assets/properties/property.jpg"
+              alt="gambar komputer"
+            />
+          </div>
+        </section>
+
+        <!-- about -->
+        <section id="About">
+          <h1 class="aboutme">About Left<span>side</span></h1>
+          <div class="content1">
+            <div class="property">
+              <div class="about-img">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+                  labore officiis similique et incidunt perspiciatis eos. Minus
+                  libero, ab suscipit.
+                </p>
+                <img
+                  class="asspro1"
+                  src="assets/properties/property(1).jpeg"
+                  alt="programmer work"
+                />
+              </div>
+            </div>
+            <div class="property">
+              <div class="about-img">
+                <img
+                  class="asspro2"
+                  src="assets/properties/property(2).jpeg"
+                  alt=""
+                />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+                  labore officiis similique et incidunt perspiciatis eos. Minus
+                  libero, ab suscipit.
+                </p>
+              </div>
+            </div>
+            <div class="property">
+              <div class="about-img">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+                  labore officiis similique et incidunt perspiciatis eos. Minus
+                  libero, absuscipit.
+                </p>
+                <img
+                  class="asspro3"
+                  src="assets/properties/property(3).jpeg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- portofolio -->
+        <section id="Portofolio">
+          <h1 class="aboutme">Porto<span>folio</span></h1>
+          <div class="container">
+            <div class="slider">
+              <div class="items">
+                <div class="img-content"></div>
+                <div class="caption">
+                  <h2>damn 1</h2>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+              <div class="items">
+                <div class="img-content"></div>
+                <div class="caption">
+                  <h2>damn 2</h2>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+              <div class="items">
+                <div class="img-content"></div>
+                <div class="caption">
+                  <h2>damn 3</h2>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+              <div class="items">
+                <div class="img-content"></div>
+                <div class="caption">
+                  <h2>damn 4</h2>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+              <div class="items">
+                <div class="img-content"></div>
+                <div class="caption">
+                  <h2>damn 5</h2>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- certificate -->
+        <section id="Certificate">
+          <h1 class="aboutme">Certifi<span>cate</span></h1>
+          <div class="container" style="background-color: #fff">
+            <div class="slider">
+              <div class="items">
+                <div class="img-content"></div>
+                <div class="caption">
+                  <h2>damn 1</h2>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+              <div class="items">
+                <div class="img-content"></div>
+                <div class="caption">
+                  <h2>damn 2</h2>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+              <div class="items">
+                <div class="img-content"></div>
+                <div class="caption">
+                  <h2>damn 3</h2>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+              <div class="items">
+                <div class="img-content"></div>
+                <div class="caption">
+                  <h2>damn 4</h2>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+              <div class="items">
+                <div class="img-content"></div>
+                <div class="caption">
+                  <h2>damn 5</h2>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- testimonial -->
+        <section id="Testimonial">
+          <h1 class="aboutme">Testimo<span>nial</span></h1>
+          <div class="container">
+            <div class="slider" style="width: 960px">
+              <div class="items">
+                <div class="img-content"></div>
+                <div class="caption">
+                  <h2>damn 1</h2>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+              <div class="items">
+                <div class="img-content"></div>
+                <div class="caption">
+                  <h2>damn 2</h2>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+              <div class="items">
+                <div class="img-content"></div>
+                <div class="caption">
+                  <h2>damn 3</h2>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- contact us -->
+        <section id="Contactus">
+          <h1 class="aboutme">Contact <span>us</span></h1>
+          <div class="contact-box">
+            <form>
+              <div class="input-row">
+                <div class="input-group">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Lorem ipsum dolor"
+                  />
+                </div>
+                <div class="input-group">
+                  <label for="phone">Phone</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="+62 89363617363"
+                  />
+                </div>
+              </div>
+              <div class="input-row">
+                <div class="input-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="example@gmail.com"
+                  />
+                </div>
+                <div class="input-group">
+                  <label for="subject">Subject</label>
+                  <input
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    placeholder="Product demo"
+                  />
+                </div>
+              </div>
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="8"
+                cols="40"
+                placeholder="Your message"
+              ></textarea>
+              <button class="l-more" style="margin-top: 5px" type="submit">
+                Submit
+              </button>
+            </form>
+          </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+          <div class="main-footer">
+            <div class="note">
+              <h1>Left<span>side</span></h1>
+              <p style="width: 180px; margin-top: -2px">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Impedit esse non quo accusamus beatae sapiente nemo amet cumque
+                animi, optio?
+              </p>
+            </div>
+            <div class="office">
+              <h2 style="width: 50px">Office</h2>
+              <p style="margin-top: 25px">
+                Lorem ipsum dolor sit amet consectetur adipisicing, animi.
+              </p>
+              <a href="#">leftside212@gmail.com</a><br /><br />
+              <a href="#">+62 85836284658</a>
+            </div>
+            <div class="link" style="margin-left: 15px">
+              <h2 style="width: 40px">Link</h2>
+              <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Stack Overflow</a></li>
+              </ul>
+            </div>
+            <div class="short-message">
+              <h2 style="width: 95px">To Authors</h2>
+              <form>
+                <i class="far fa-envelope"></i>
+                <input type="text" placeholder="say hi!" />
+                <button type="submit">
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </form>
+              <div class="social-icons">
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-github"></i>
+                <i class="fa-brands fa-stack-overflow"></i>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <!-- copyright -->
+        <p style="color: white; text-align: center; margin-top: -35px">
+          &copy;copyright | by leftside
+        </p>
+      </section>
+    </section>
+
+    <script>
+      window.addEventListener("load", () => {
+        const loadingScreen = document.querySelector(".center-body");
+        const mainSection = document.querySelector(".main-section");
+
+        if (mainSection) {
+          mainSection.style.display = "none";
+        }
+
+        loadingScreen.style.animation = "center-body 4.5s forwards";
+
+        setTimeout(() => {
+          loadingScreen.remove();
+
+          if (mainSection) {
+            mainSection.style.display = "block";
+          }
+        }, 4500);
+      });
+    </script>
+  </body>
 </html>

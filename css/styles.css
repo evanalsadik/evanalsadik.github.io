@@ -1,0 +1,429 @@
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+h1 {
+  margin-left: 10px;
+}
+
+h1 span {
+  color: #c91111;
+}
+
+
+/* loading screen */
+.center-body {
+  z-index: 9999;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  animation-name: center-body;
+  animation-timing-function: linear;
+  animation-duration: 4.2s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+
+@keyframes center-body {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  45% {
+    opacity: 0.75;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  85% {
+    opacity: 0.35;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.cube-red {
+  fill: transparent;
+  stroke: red;
+  stroke-width: 3;
+}
+
+.loader-triangle-3 polygon {
+  stroke-dasharray: 17;
+  stroke-width: 3;
+  animation: anm-tr-3-move 4.5s cubic-bezier(0.25, 0.65, 0.85, 0.95) infinite;
+}
+
+@keyframes anm-tr-3-move {
+  to {
+    stroke-dashoffset: -136;
+  }
+}
+
+
+/* contents */
+/* navbar */
+nav {
+  height: 70px;
+  background-color: #fff;
+  border-bottom: 1px solid black;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+.nav-item {
+  width: 1000px;
+  height: 80px;
+  margin: auto;
+  padding: 0 20px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-menu ul li {
+  list-style: none;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 10px;
+  border-radius: 8px;
+}
+
+a[selected] {
+  background-color: #ededed;
+  padding: 10px 10px;
+}
+
+a:hover {
+  background-color: #575757;
+}
+
+/* home */
+#Home {
+  width: auto;
+  height: 500px;
+  padding: 0 10%;
+}
+
+.content {
+  display: flex;
+  height: 500px;
+  justify-content: space-between;
+}
+
+.content .text-content {
+  margin-top: 70px;
+  margin-left: 55px;
+  width: 500px;
+}
+
+.content .text-content h1 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.content .property1 {
+  width: 300px;
+  height: 300px;
+  margin: 100px 55px;
+}
+
+.l-more {
+  border-style: none;
+  background-color: #167cff;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+  width: 130px;
+  height: 45px;
+}
+
+.l-more:hover {
+  background-color: #0060db;
+}
+
+/* about */
+#About {
+  background-color: #fbfbfb;
+  width: auto;
+  height: 500px;
+}
+
+.aboutme {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.content1 {
+  width: auto;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+
+.content1 .property .about-img {
+  width: 200px;
+  height: 150px;
+  margin: auto;
+}
+
+.content1 .property .about-img img {
+  width: 190px;
+  height: 150px;
+}
+
+.asspro1,
+.asspro3 {
+  margin-top: 15px;
+}
+
+.asspro2 {
+  margin-top: 15px;
+}
+
+#Portofolio {
+  width: auto;
+  height: 500px;
+  margin-top: -20px;
+  padding: 0 10%;
+}
+
+#Certificate {
+  background-color: #fbfbfb;
+  width: auto;
+  height: 500px;
+  margin-top: -40px;
+  padding: 0 10%;
+}
+
+#Testimonial {
+  width: auto;
+  height: 500px;
+  margin-top: -20px;
+  padding: 0 10%;
+}
+
+/* item */
+.container {
+  width: 960px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: #fbfbfb;
+  margin: auto;
+  overflow: auto;
+  position: relative;
+}
+
+.slider {
+  width: 1200px;
+  height: 260px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  display: flex;
+  margin: auto;
+}
+
+.container .slider .items {
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-block: 10px;
+  background-color: #efefef;
+  width: 220px;
+  overflow: hidden;
+}
+
+.container .slider .items .img-content {
+  background-color: red;
+  width: 220px;
+  height: 180px;
+}
+
+.container .slider .items .caption h2 {
+  margin-top: 3px;
+  margin-left: 10px;
+}
+
+.container .slider .items .caption p {
+  margin-top: -20px;
+  margin-left: 10px;
+}
+
+/* contact */
+#Contactus {
+  background-color: #fbfbfb;
+  width: auto;
+  height: 500px;
+  margin-top: -40px;
+  padding: 0 10%;
+}
+
+.contact-box {
+  width: 650px;
+  margin: 20px auto;
+}
+
+.input-row {
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+.input-row .input-group {
+  flex-basis: 45px;
+}
+
+.input-row .input-group input {
+  width: 300px;
+  border-style: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  padding-bottom: 5px;
+  background-color: #fbfbfb;
+}
+
+form label {
+  margin-bottom: 6px;
+  display: block;
+}
+
+form textarea {
+  margin: 0 auto;
+  width: 650px;
+  border: 1px solid black;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #fbfbfb;
+}
+
+/* footer */
+footer {
+  background-color: black;
+  width: auto;
+  height: 270px;
+  margin-bottom: 0px;
+}
+
+footer .main-footer {
+  width: auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+footer div {
+  width: 210px;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+footer div h2 {
+  border-bottom: 2px solid white;
+}
+
+footer ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  line-height: 25px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  line-height: 10px;
+}
+
+footer a:hover {
+  color: #0078ed;
+}
+
+.short-message form {
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+
+.short-message form .far {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.short-message form input {
+  width: 85%;
+  background: transparent;
+  color: white;
+  border: 0;
+  outline: none;
+}
+
+.short-message form button {
+  background: white;
+  width: 10%;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.short-message form button .fas {
+  font-size: 16px;
+  color: blue;
+}
+
+.social-icons .fa-brands {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background-color: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+}
